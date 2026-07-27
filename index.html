@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Youth Movement for Change (YMC) | Youth-Led Mental Health Fundraising in Sudan</title>
+<meta name="description" content="Youth Movement for Change (YMC) is a Sudanese youth movement that runs small community projects to fund mental health support across Sudan. Join, donate, and help the ripple grow.">
+<meta name="keywords" content="Sudan, mental health, youth movement, YMC, community fundraising, Sudanese youth, mental health Sudan, nonprofit, NGO, charity, donations">
+<meta name="author" content="Youth Movement for Change (YMC)">
+<link rel="canonical" href="https://www.example-ymc-sudan.org/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Youth Movement for Change (YMC)">
+<meta property="og:description" content="A youth movement raising funds through small community projects to support mental health initiatives in Sudan.">
+<meta property="og:image" content="logo.png">
+<meta property="og:url" content="https://www.example-ymc-sudan.org/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_SD">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Youth Movement for Change (YMC)">
+<meta name="twitter:description" content="A youth movement raising funds through small community projects to support mental health initiatives in Sudan.">
+<meta name="twitter:image" content="logo.png">
+
+<link rel="icon" type="image/png" href="logo.png">
+
+<!-- Preconnect + Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- ================= WELCOME / SECURITY MODAL ================= -->
+<div class="welcome-modal-overlay" id="welcomeModalOverlay" role="dialog" aria-modal="true" aria-labelledby="welcomeModalTitle" aria-describedby="welcomeModalDesc" hidden>
+  <div class="welcome-modal" id="welcomeModal">
+    <div class="welcome-modal__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <path d="M12 8v5"/>
+        <path d="M12 16h.01"/>
+      </svg>
+    </div>
+    <h2 class="welcome-modal__title" id="welcomeModalTitle">Security Notice</h2>
+    <p class="welcome-modal__lead">Before using this website, please note:</p>
+    <ul class="welcome-modal__list" id="welcomeModalDesc">
+      <li>This website is <strong>NOT</strong> Working for now</li>
+      <li>For better experince laptop or desktop is recommended.</li>
+      <li>for better experince use the dark mode.</li>
+    </ul>
+    <button type="button" class="btn btn-primary btn-block welcome-modal__btn" id="welcomeModalAccept">
+      OK, I Understand
+    </button>
+  </div>
+</div>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ============ HEADER / NAVBAR ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#hero" class="brand" aria-label="Youth Movement for Change home">
+      <img src="logo.png" alt="YMC Logo" class="brand-logo" width="42" height="42" loading="lazy" onerror="this.style.display='none'">
+      <span class="brand-name">
+        <strong>YMC</strong>
+        <small data-i18n="brandTagline">Youth Movement for Change</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="#hero" data-i18n="navHome">Home</a></li>
+        <li><a href="#about" data-i18n="navAbout">About</a></li>
+        <li><a href="#vision-mission" data-i18n="navVisionMission">Vision &amp; Mission</a></li>
+        <li><a href="#projects" data-i18n="navProjects">Projects</a></li>
+        <li><a href="#impact" data-i18n="navImpact">Impact</a></li>
+        <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="langToggle" type="button" aria-label="Switch language">
+        <span id="langToggleLabel">العربية</span>
+      </button>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg id="themeIconSun" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5V5M12 19V21.5M4.2 4.2L6 6M18 18L19.8 19.8M2.5 12H5M19 12H21.5M4.2 19.8L6 18M18 6L19.8 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg id="themeIconMoon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" hidden><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-accent btn-small" data-i18n="navDonate">Get Involved</a>
+      <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="ripple-field" aria-hidden="true">
+      <span class="ripple r1"></span>
+      <span class="ripple r2"></span>
+      <span class="ripple r3"></span>
+    </div>
+    <div class="container hero-inner reveal">
+      <img src="logo.png" alt="Youth Movement for Change logo" class="hero-logo" width="120" height="120" loading="lazy" onerror="this.style.display='none'">
+      <p class="eyebrow" data-i18n="heroEyebrow">Youth Movement for Change · Sudan</p>
+      <h1 data-i18n="heroHeadline">Small Projects. Real Change. Renewed Minds.</h1>
+      <p class="hero-sub" data-i18n="heroSub">YMC unites young Sudanese to fund grassroots community projects that support mental health across Sudan — one small act at a time.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-accent" data-i18n="heroCta1">Support Our Work</a>
+        <a href="#about" class="btn btn-outline" data-i18n="heroCta2">Learn More</a>
+      </div>
+    </div>
+    <svg class="wave-divider" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,90 480,0 720,30 C960,60 1200,10 1440,45 L1440,90 L0,90 Z" fill="currentColor"/></svg>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <p class="eyebrow" data-i18n="aboutEyebrow">Who We Are</p>
+        <h2 data-i18n="aboutTitle">About YMC</h2>
+        <p data-i18n="aboutBody">Youth Movement for Change (YMC) is a youth-led movement born from a simple belief: young people, working together at the community level, can fund and sustain real mental health support for Sudan. We organize small, local fundraising projects — bake sales, art initiatives, community runs — and channel every contribution toward mental health awareness, care, and support networks across the country.</p>
+        <p data-i18n="aboutBody2">We are volunteers, students, artists, and organizers. We don't wait for large institutions to act — we start where we are, with what we have, and grow the impact together.</p>
+      </div>
+      <figure class="about-media reveal">
+        <img src="sudan.jpg" alt="Sudan" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ VISION & MISSION ============ -->
+  <section class="section section-alt" id="vision-mission">
+    <div class="container">
+      <div class="vm-grid">
+        <div class="vm-card reveal">
+          <span class="vm-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M2 12C4 7 8 4.5 12 4.5S20 7 22 12C20 17 16 19.5 12 19.5S4 17 2 12Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <h3 data-i18n="visionTitle">Our Vision</h3>
+          <p data-i18n="visionBody">A Sudan where every young person has access to compassionate mental health support, and where hope for the future is within everyone's reach.</p>
+        </div>
+        <div class="vm-card reveal">
+          <span class="vm-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <h3 data-i18n="missionTitle">Our Mission</h3>
+          <p data-i18n="missionBody">To mobilize young people around small, sustainable community projects that fund mental health initiatives, awareness campaigns, and peer support networks across Sudan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY MENTAL HEALTH MATTERS ============ -->
+  <section class="section" id="why-matters">
+    <div class="container why-grid">
+      <div class="why-text reveal">
+        <p class="eyebrow" data-i18n="whyEyebrow">The Need</p>
+        <h2 data-i18n="whyTitle">Why Mental Health Matters in Sudan</h2>
+        <p data-i18n="whyBody">Years of instability, displacement, and economic hardship have placed an enormous strain on the mental wellbeing of Sudanese communities — especially young people. Yet mental health care remains scarce, and the stigma around asking for help keeps many from seeking support at all.</p>
+        <p data-i18n="whyBody2">YMC exists to close that gap from the ground up: funding accessible support, encouraging open conversations, and reminding every young person that they are not alone.</p>
+      </div>
+      <ul class="why-points reveal">
+        <li>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span data-i18n="whyPoint1">Limited access to affordable mental health services outside major cities</span>
+        </li>
+        <li>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span data-i18n="whyPoint2">Deep-rooted stigma that discourages young people from seeking help</span>
+        </li>
+        <li>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span data-i18n="whyPoint3">The compounded emotional toll of displacement and economic hardship</span>
+        </li>
+        <li>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <span data-i18n="whyPoint4">A shortage of sustainable, community-rooted funding for support programs</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="projectsEyebrow">What We Run</p>
+        <h2 data-i18n="projectsTitle">Our Projects</h2>
+        <p data-i18n="projectsSub">Small, local, and repeatable — our projects are designed so any community can run them.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 10h16l-1.2 8.4A2 2 0 0 1 16.8 20H7.2a2 2 0 0 1-2-1.6L4 10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 10V8a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3 data-i18n="project1Title">Community Bake Sales</h3>
+          <p data-i18n="project1Body">Neighborhood bake sales that turn shared food into direct funding for local mental health sessions.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3 4 7v6c0 5 3.5 7.5 8 9 4.5-1.5 8-4 8-9V7l-8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+          <h3 data-i18n="project2Title">Art for Awareness</h3>
+          <p data-i18n="project2Body">Youth-led art exhibitions that raise funds while opening honest conversations about mental health.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="8.5" cy="8" r="2.6" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 19c.6-3 2.6-4.8 5-4.8s4.4 1.8 5 4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="16.5" cy="9" r="2.1" stroke="currentColor" stroke-width="1.6"/><path d="M14.8 14.6c1.9.3 3.4 1.8 3.9 4.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <h3 data-i18n="project3Title">Youth Support Circles</h3>
+          <p data-i18n="project3Body">Peer-led group sessions, funded entirely by community contributions, offering a safe space to talk.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21c4-3.2 7-6.4 7-10a7 7 0 1 0-14 0c0 3.6 3 6.8 7 10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3 data-i18n="project4Title">Fundraising Walks &amp; Runs</h3>
+          <p data-i18n="project4Body">Community walks that bring people together in movement, awareness, and shared purpose.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW DONATIONS HELP ============ -->
+  <section class="section" id="donations">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="donationsEyebrow">Where It Goes</p>
+        <h2 data-i18n="donationsTitle">How Donations Help</h2>
+        <p data-i18n="donationsSub">Every contribution — however small — is placed directly into community mental health support.</p>
+      </div>
+      <div class="card-grid donations-grid">
+        <div class="donation-card reveal">
+          <span class="donation-amount">$10</span>
+          <p data-i18n="donation1">Funds one peer support session for a young person in need</p>
+        </div>
+        <div class="donation-card reveal">
+          <span class="donation-amount">$25</span>
+          <p data-i18n="donation2">Provides workshop materials for a community awareness event</p>
+        </div>
+        <div class="donation-card reveal">
+          <span class="donation-amount">$50</span>
+          <p data-i18n="donation3">Supports a full day of a mobile mental health outreach visit</p>
+        </div>
+        <div class="donation-card reveal">
+          <span class="donation-amount">$100</span>
+          <p data-i18n="donation4">Helps sustain a monthly youth support circle for a full season</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IMPACT STATISTICS ============ -->
+  <section class="section section-dark" id="impact">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="impactEyebrow">Our Impact</p>
+        <h2 data-i18n="impactTitle">After 4 years</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat reveal">
+          <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+          <p data-i18n="stat1">Youth Volunteers</p>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-number" data-target="12">0</span>
+          <p data-i18n="stat2">Community Projects</p>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-number" data-target="10,000">0</span><span class="stat-suffix">+</span>
+          <p data-i18n="stat3">Lives Reached</p>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-number" data-target="28">0</span>
+          <p data-i18n="stat4">Cities Across Sudan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CORE VALUES ============ -->
+  <section class="section" id="values">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="valuesEyebrow">What Guides Us</p>
+        <h2 data-i18n="valuesTitle">Core Values</h2>
+      </div>
+      <div class="card-grid values-grid">
+        <div class="value-card reveal">
+          <span class="card-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.4-9.3-8.8C1.3 8 3 4.6 6.6 4.1c2-.3 3.7.6 4.9 2.3 1.2-1.7 2.9-2.6 4.9-2.3 3.6.5 5.3 3.9 3.9 7.1C19 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+          <h3 data-i18n="value1Title">Compassion</h3>
+          <p data-i18n="value1Body">We lead with empathy for every person we serve.</p>
+        </div>
+        <div class="value-card reveal">
+          <span class="card-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3 4 6.5v5c0 5 3.4 7.6 8 9 4.6-1.4 8-4 8-9v-5L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3 data-i18n="value2Title">Integrity</h3>
+          <p data-i18n="value2Body">Every donation is tracked and used exactly as promised.</p>
+        </div>
+        <div class="value-card reveal">
+          <span class="card-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="9" r="2.6" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="9" r="2.6" stroke="currentColor" stroke-width="1.6"/><path d="M3 19c.7-2.8 2.6-4.5 5-4.5s4.3 1.7 5 4.5M11 19c.7-2.8 2.6-4.5 5-4.5s4.3 1.7 5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <h3 data-i18n="value3Title">Community</h3>
+          <p data-i18n="value3Body">Change grows fastest when a whole community carries it.</p>
+        </div>
+        <div class="value-card reveal">
+          <span class="card-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v2.2M12 18.8V21M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M3 12h2.2M18.8 12H21M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3 data-i18n="value4Title">Hope</h3>
+          <p data-i18n="value4Body">We hold onto hope, and help others hold onto it too.</p>
+        </div>
+        <div class="value-card reveal">
+          <span class="card-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 0 3-6.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M4 4v4h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3 data-i18n="value5Title">Resilience</h3>
+          <p data-i18n="value5Body">We keep building, project by project, no matter the setbacks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <!-- <section class="section section-alt" id="faq">
+    <div class="container narrow">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="faqEyebrow">Questions</p>
+        <h2 data-i18n="faqTitle">Frequently Asked Questions</h2>
+      </div>
+      <div class="accordion reveal" id="faqAccordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span data-i18n="faq1Q">Where exactly does my donation go?</span>
+            <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p data-i18n="faq1A">100% of public donations are directed to active community projects and mental health programs. We publish a simple breakdown for every project we run.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span data-i18n="faq2Q">Can I volunteer without donating money?</span>
+            <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p data-i18n="faq2A">Absolutely. Time, skills, and local organizing are just as valuable as funding. Reach out through our contact form to get started.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span data-i18n="faq3Q">Is YMC only active in Khartoum?</span>
+            <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p data-i18n="faq3A">No. While we started in Khartoum, our community projects now run across several cities, led by local youth volunteers.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span data-i18n="faq4Q">How do I start a project in my own community?</span>
+            <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="accordion-panel">
+            <p data-i18n="faq4A">Message us through the contact form below with your city and idea — our team will guide you through our simple project toolkit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow" data-i18n="contactEyebrow">Reach Us</p>
+        <h2 data-i18n="contactTitle">Get In Touch</h2>
+        <p data-i18n="contactSub">Have a question, an idea, or want to bring YMC to your community? We'd love to hear from you.</p>
+        <ul class="contact-list">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n-label="contactEmailLabel">Email</span>: <a href="mailto:info@ymc-sudan.org">info@ymc-sudan.org</a>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15l2-3.5-5-2-1.5 1.5A11.5 11.5 0 0 1 7 8.5L8.5 7l-2-5L3 4c0 .3 0 .7.05 1Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <span data-i18n-label="contactPhoneLabel">Phone</span>: <a href="tel:+249000000000">+249 00 000 0000</a>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.3 7-11.5A7 7 0 0 0 5 9.5C5 14.7 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span data-i18n-label="contactLocationLabel">Location</span>: <span data-i18n="contactLocationValue">Online --temporary--</span>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+            <span data-i18n-label="contactInstaLabel">Instagram</span>: <a href="https://instagram.com/ymc.sudan" target="_blank" rel="noopener">@ymc.sudan</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="cf-name" data-i18n="formNameLabel">Full Name</label>
+          <input type="text" id="cf-name" name="name" required autocomplete="name">
+          <span class="form-error" data-i18n="formNameError">Please enter your name.</span>
+        </div>
+        <div class="form-row">
+          <label for="cf-email" data-i18n="formEmailLabel">Email Address</label>
+          <input type="email" id="cf-email" name="email" required autocomplete="email">
+          <span class="form-error" data-i18n="formEmailError">Please enter a valid email.</span>
+        </div>
+        <div class="form-row">
+          <label for="cf-message" data-i18n="formMessageLabel">Message</label>
+          <textarea id="cf-message" name="message" rows="5" required></textarea>
+          <span class="form-error" data-i18n="formMessageError">Please enter a message.</span>
+        </div>
+        <button type="submit" class="btn btn-accent btn-block" data-i18n="formSubmit">Send Message</button>
+        <p class="form-success" id="formSuccess" role="status" data-i18n="formSuccess">Thank you — your message has been received. We'll be in touch soon.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#hero" class="brand">
+        <img src="logo.png" alt="YMC Logo" width="40" height="40" loading="lazy" onerror="this.style.display='none'">
+        <span class="brand-name"><strong>YMC</strong></span>
+      </a>
+      <p data-i18n="footerDesc">A youth movement raising funds through small community projects to support mental health initiatives in Sudan.</p>
+      <div class="footer-social">
+        <a href="https://instagram.com/ymc.sudan" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="mailto:info@ymc-sudan.org" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4 data-i18n="footerLinksTitle">Quick Links</h4>
+      <ul>
+        <li><a href="#about" data-i18n="navAbout">About</a></li>
+        <li><a href="#projects" data-i18n="navProjects">Projects</a></li>
+        <li><a href="#impact" data-i18n="navImpact">Impact</a></li>
+        <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 data-i18n="footerContactTitle">Contact</h4>
+      <ul>
+        <li><a href="mailto:info@ymc-sudan.org">info@ymc-sudan.org</a></li>
+        <li><a href="tel:+249000000000">+249 00 000 0000</a></li>
+        <li data-i18n="contactLocationValue">Online --temporary--</li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h4 data-i18n="footerNewsletterTitle">Stay Updated</h4>
+      <p data-i18n="footerNewsletterSub">Get occasional updates on our projects and impact.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <label for="nl-email" class="sr-only" data-i18n="footerNewsletterLabel">Email address</label>
+        <input type="email" id="nl-email" required data-i18n-placeholder="footerNewsletterPlaceholder" placeholder="Your email">
+        <button type="submit" aria-label="Subscribe">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M14 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <button class="lang-switch-footer" id="langToggleFooter" type="button" data-i18n="footerLangSwitch">العربية</button>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 Youth Movement for Change (YMC)</p>
+    <p class="footer-credit">Designed &amp; Developed by @KinProjects2026</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
