@@ -63,10 +63,6 @@
 /* ==========================================================================
    Reset & base
    ========================================================================== */
-*{
-   overflow-x:hidden;
-   
-}
 *,*::before,*::after{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce){
